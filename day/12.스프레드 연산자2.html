@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+          const data = [
+            {id:1, name:'배수지', age:27},
+            {id:2, name:'유인나', age:27},
+            {id:3, name:'정인선', age:27},
+            {id:4, name:'정인나', age:27},
+            {id:5, name:'에일리', age:27},
+        ]
+
+        const data1 = [
+            ...data,
+            {
+                id:6,
+                name:'박신혜',
+                agd:30
+            }
+        ]
+
+        console.log(data1)
+
+        const data2 = data.map((item,index) => {
+            if(item.id===1){
+                return {
+                    ...item,
+                    name:'유인나',
+                    age:40
+                }
+            }
+            else{
+                return item
+            }
+        })
+
+        console.log(data2)
+
+        //삼항연산자
+        const data3 = data.map(item=>item.id===2 ? {...item,name:'배수지',age:27} : item )
+
+        console.log(data3)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

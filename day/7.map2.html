@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         const data = [
+            {id:1, name:'배수지', age:27},
+            {id:2, name:'유인나', age:27},
+            {id:3, name:'정인선', age:27},
+            {id:4, name:'정인나', age:27},
+            {id:5, name:'에일리', age:27},
+        ]
+
+        data.map((item,index)=>{
+            return console.log(item.id,item.name,item.age)
+        })
+
+        console.log('---------')
+        data.map((item,index)=>{
+            console.log(item.id,item.name,item.age)
+        })
+
+        console.log('---------')
+        data.map((item,index,arr)=> console.log(item.id,item.name,item.age,arr))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
